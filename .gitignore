@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+build/
+dist/
+develop-eggs/
+*.egg-info
+.installed.cfg
+*.egg
+.mypy_cache/
+.pytest_cache/
+.venv/
+env/
+venv/
+*.env # Arquivos de ambiente como .env (se usar)
+
+# IDEs
+.vscode/ # Pasta de configurações do VS Code (opcional, se você não quiser compartilhar configurações de workspace)
+.idea/   # Para PyCharm/IntelliJ
+
+# Datasets
+# Você pode querer versionar o seu jokes_dataset.jsonl se ele for pequeno e manualmente curado.
+# Se for raspar muitos dados ou gerar dados grandes, ignore aqui:
+# data/
+# *.jsonl # Cuidado: se descomentar, vai ignorar jokes_dataset.jsonl!
+# /jokes_dataset.jsonl # Ignora o arquivo específico no raiz
+
+# Logs e Modelos de ML
+*.log # Arquivos de log
+output/ # Pasta de saída de modelos/resultados
+results_jokes_model/ # Seu diretório de resultados do fine-tuning
+
+# Arquivos de dados PyTorch
+*.pt
+*.pth
+
+# Arquivos grandes de modelo (Hugging Face)
+# Se você baixar modelos muito grandes, eles podem ir para o cache do HF, que é ignorado por padrão.
+# No entanto, se salvar localmente na raiz do projeto:
+# model_weights/
+# checkpoints/
+# transformers/ # O cache do Hugging Face fica geralmente em ~/.cache/huggingface
+
+bin/*
+# Ignorar pastas de bibliotecas do Python  
+lib/  
+lib64/
+
+share/
+
+# Se estiver usando ambiente virtual (recomendado)  
+venv/  
+.env/  
+.venv/  
+env/ 
