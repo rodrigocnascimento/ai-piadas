@@ -53,15 +53,27 @@ tokenizer.json
 # checkpoints/
 # transformers/ # O cache do Hugging Face fica geralmente em ~/.cache/huggingface
 
-bin/*
-# Ignorar pastas de bibliotecas do Python  
+# Ambiente virtual (venv) completo
+bin/
+include/
 lib/  
 lib64/
-
 share/
+pyvenv.cfg
+pip-wheel-metadata/
+wheels/
 
-# Se estiver usando ambiente virtual (recomendado)  
+# Ativação scripts específicos
+activate*
+!activate  # se tiver um activate customizado na raiz
+
+# Se estiver usando ambiente virtual em outros locais (recomendado)  
 venv/  
 .env/  
 .venv/  
 env/ 
+
+# Cache Hugging Face local (caso salve na pasta do projeto)
+~/.cache/huggingface/
+models/
+pretrained/
