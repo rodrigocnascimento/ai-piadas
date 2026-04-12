@@ -17,21 +17,30 @@ env/
 venv/
 *.env # Arquivos de ambiente como .env (se usar)
 
-# IDEs
-.vscode/ # Pasta de configurações do VS Code (opcional, se você não quiser compartilhar configurações de workspace)
+# IDEs (descomente se NÃO quiser compartilhar configurações)
+# .vscode/
 .idea/   # Para PyCharm/IntelliJ
 
-# Datasets
-# Você pode querer versionar o seu jokes_dataset.jsonl se ele for pequeno e manualmente curado.
-# Se for raspar muitos dados ou gerar dados grandes, ignore aqui:
-# data/
-# *.jsonl # Cuidado: se descomentar, vai ignorar jokes_dataset.jsonl!
-# /jokes_dataset.jsonl # Ignora o arquivo específico no raiz
+# Datasets gerados automaticamente (não versionar - são reproduzíveis via prepare_data.py)
+data/jokes_train_dataset/
+data/jokes_val_dataset/
+
+# Datasets manuais (versionar - são curados)
+# data/jokes_dataset.jsonl
+# data/jokes_bigger_dataset.jsonl
 
 # Logs e Modelos de ML
-*.log # Arquivos de log
-output/ # Pasta de saída de modelos/resultados
-results_jokes_model/ # Seu diretório de resultados do fine-tuning
+*.log
+output/
+results_jokes_model/
+results_jokes_bigger_model/
+data/results_*/
+
+# Checkpoints e pesos de modelo
+*.safetensors
+checkpoint-*/
+*.bin
+tokenizer.json
 
 # Arquivos de dados PyTorch
 *.pt

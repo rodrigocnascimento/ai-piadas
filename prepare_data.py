@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 # 1. Carregar o dataset do arquivo JSON Lines
 # O Pandas é útil para ler o JSONL facilmente em um DataFrame
 try:
-    df = pd.read_json('data/jokes_dataset.jsonl', lines=True)
+    df = pd.read_json('data/jokes_bigger_dataset.jsonl', lines=True)
     print(f"Dataset carregado com {len(df)} exemplos.")
 except FileNotFoundError:
     print("Erro: O arquivo 'data/jokes_dataset.jsonl' não foi encontrado. Certifique-se de que ele está na mesma pasta do script.")

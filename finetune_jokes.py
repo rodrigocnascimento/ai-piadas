@@ -11,10 +11,10 @@ from trl import SFTTrainer
 MODEL_NAME = "mistralai/Mistral-7B-Instruct-v0.3" # "mistralai/Mistral-7B-Instruct-v0.2" # Ou v0.3 se preferir
 
 # Caminho para o seu dataset JSON Lines
-DATASET_PATH = "data/jokes_dataset.jsonl"
+DATASET_PATH = "data/jokes_bigger_dataset.jsonl"
 
 # Nome da pasta onde o modelo finetunado será salvo
-OUTPUT_DIR = "./data/results_jokes_model"
+OUTPUT_DIR = "./data/results_jokes_bigger_model"
 
 # --- 2. Configuração do QLoRA ---
 # Define a configuração do LoRA para o fine-tuning
