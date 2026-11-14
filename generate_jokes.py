@@ -44,7 +44,6 @@ tokenizer.padding_side = "right"
 print("Modelo finetunado e tokenizador carregados com sucesso. Pronto para gerar piadas!")
 
 # --- 6. Função de Geração de Piadas ---
-# --- 6. Função de Geração de Piadas ---
 def generate_joke(topic, instruction_prefix="Gere uma piada sobre o tópico"):
     # Formata o prompt exatamente como o modelo foi treinado
     prompt = f"<s>[INST] {instruction_prefix}: {topic} [/INST]"
